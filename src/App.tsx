@@ -7,21 +7,21 @@ gsap.registerPlugin(ScrollTrigger);
 
 const PROJECTS = [
   {
-    title: 'Project #1',
+    title: 'One Way Dream',
     desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
-    tag: 'Web App',
+    tag: 'Game Dev',
     color: '#6366f1',
   },
   {
-    title: 'Project #2',
+    title: 'YummyYummyMenu',
     desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
-    tag: 'Backend',
+    tag: 'Frontend',
     color: '#8b5cf6',
   },
   {
     title: 'Project #3',
     desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
-    tag: 'Mobile',
+    tag: 'Deep Learning',
     color: '#a78bfa',
   },
 ];
@@ -967,7 +967,7 @@ export default function App() {
               (e.currentTarget.style.background = 'rgba(99,102,241,0.15)')
             }
           >
-            test@test.test
+            samy.ba.mail@proton.me
           </a>
         </section>
       </main>
