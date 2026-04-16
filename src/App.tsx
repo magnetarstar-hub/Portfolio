@@ -1,4 +1,5 @@
 import { useEffect, useRef } from 'react';
+import NoiseGradient from './components/NoiseGradient';
 import { motion, useScroll, useTransform } from 'framer-motion';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
@@ -428,50 +429,8 @@ export default function App() {
         }}
       />
 
-      {/* Noise overlay */}
-      <div
-        style={{
-          position: 'fixed',
-          inset: 0,
-          backgroundImage:
-            "url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 200'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.03'/%3E%3C/svg%3E\")",
-          backgroundRepeat: 'repeat',
-          pointerEvents: 'none',
-          zIndex: 0,
-        }}
-      />
-
-      {/* Ambient glow blobs */}
-      <div
-        style={{
-          position: 'fixed',
-          top: '10%',
-          left: '15%',
-          width: 400,
-          height: 400,
-          background:
-            'radial-gradient(circle, rgba(99,102,241,0.12) 0%, transparent 70%)',
-          borderRadius: '50%',
-          pointerEvents: 'none',
-          zIndex: 0,
-          filter: 'blur(40px)',
-        }}
-      />
-      <div
-        style={{
-          position: 'fixed',
-          bottom: '20%',
-          right: '10%',
-          width: 350,
-          height: 350,
-          background:
-            'radial-gradient(circle, rgba(139,92,246,0.1) 0%, transparent 70%)',
-          borderRadius: '50%',
-          pointerEvents: 'none',
-          zIndex: 0,
-          filter: 'blur(40px)',
-        }}
-      />
+      {/* Animated noise gradient background */}
+      <NoiseGradient />
 
       <main style={{ position: 'relative', zIndex: 1 }}>
         {/* DOT GRID*/}
